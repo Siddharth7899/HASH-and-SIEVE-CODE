@@ -2,7 +2,9 @@
 #include <iostream>
 
 using namespace std;
-
+/* we have to given number n and we have
+to count frequencies of all number b/w 0
+to n*/
 int main(){
     int n;
     cin>>n;
@@ -17,9 +19,10 @@ int main(){
     {
         freq[arr[i]]++;
     }
+    cout<<"Frequencies of number occur b/w 0 to n is:-"<<endl;
     for(int i=0 ; i<n ; i++)
     {
-        cout<<"Frequencies of number occur b/w 0 t0 n is:-"<<endl<<i<<":"<<freq[i]<<endl;
+        cout<<i<<":"<<freq[i]<<endl;
     }
     return 0;
 }
